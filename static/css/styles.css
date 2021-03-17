@@ -74,15 +74,7 @@
 	 margin-bottom: 1rem;
 	 position: relative;
 }
- /* .heading:after {
-	 display: block;
-	 content: '';
-	 position: absolute;
-	 width: 60px;
-	 height: 4px;
-	 background: linear-gradient(135deg, #1a9be6, #1a57e6);
-	 bottom: 0;
-} */
+
  .description {
 	 width: 100%;
 	 margin-top: 0;
@@ -179,51 +171,20 @@
 	 padding: 0.5em 1em;
 	 border-radius: 100px;
 	 font: inherit;
-	 background: linear-gradient(135deg, #1a9be6, #1a57e6);
+	 background: linear-gradient( #f48b29, #ff884b);
 	 border: none;
 	 position: relative;
 	 transform-style: preserve-3d;
 	 transition: 300ms ease;
 }
- .button:before {
-	 transition: 300ms ease;
-	 position: absolute;
-	 display: block;
-	 content: '';
-	 transform: translateZ(-40px);
-	 -webkit-backface-visibility: hidden;
-	 backface-visibility: hidden;
-	 height: calc(100% - 20px);
-	 width: calc(100% - 20px);
-	 border-radius: 100px;
-	 left: 10px;
-	 top: 16px;
-	 box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
-	 background-color: rgba(26, 87, 230, 0.25);
-}
+
 
 .button.delete-button {
 	 background-color: rgba(230, 87, 230, 0.25);
-	 background: linear-gradient(135deg, #e61a46, #e61a1a);
+	 background: linear-gradient(135deg, #ff884b, #ff884b);
 }
-.button.delete-button:before {
-	 background-color: rgba(230, 87, 230, 0.25);
-	 box-shadow: 0 0 10px 10px rgba(230, 87, 230, 0.25);
-}
- /* .button:hover {
-	 transform: translateZ(55px);
-}
- .button:hover:before {
-	 transform: translateZ(-55px);
-}
- .button:active {
-	 transform: translateZ(20px);
-}
- .button:active:before {
-	 transform: translateZ(-20px);
-	 top: 12px;
-	 top: 12px;
-} */
+
+
 .container.add {
     margin-top: 40px;
     margin-bottom: 20px;
