@@ -1,0 +1,21 @@
+{% extends 'bootstrap/base.html' %}
+{% include 'header.html' %}
+
+{% block content %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+
+{% if current_user.is_authenticated %}
+
+{% include 'movies.html' %}
+
+{% else %}
+
+<div class="container" style="display:flex; justify-content:center; text-align: center; padding-top: 180px;" >
+    <div>
+        <h1>Keep track of movies you want to watch!</h1>
+        <h2>Create free account, and start adding movies<br>to your WatchList</h2>
+        
+    </div>
+</div>
+{% endif %}
+{% endblock %}

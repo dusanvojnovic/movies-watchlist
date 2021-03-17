@@ -1,0 +1,25 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% include 'header.html' %}
+
+
+{% block content %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+
+<div class="login-page">
+    <div class="form">
+            <div class="col-md-4 col-lg-offset-4">
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+          <p>{{message|safe}}</p>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+      {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "light"}) }}
+            </div>
+    </div>
+  </div>
+
+  {% endblock %}
